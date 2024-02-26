@@ -1,3 +1,4 @@
+![1673961840526](https://github.com/mr-architect19/Network-Security-Checklist/assets/37951691/c3f82ff9-87a2-4ec9-b1f1-528e2a35c6e8)
 # Network-Security-Checklist
 
 Safeguard your digital fortress: utilize firewalls, IDS/IPS, and secure VPNs. Enforce strong passwords, MFA, and least privilege access. Classify and encrypt sensitive data, and back it up regularly. Maintain security hygiene with software updates, anti-malware, log monitoring, user training, and an incident response plan. Consider network segmentation, strong encryption algorithms, and regular security assessments for further fortification. Remember, vigilance is key in the ever-evolving battle against cyber threats.
@@ -36,7 +37,7 @@ Safeguard your digital fortress: utilize firewalls, IDS/IPS, and secure VPNs. En
 4.	Most routers let you disable UPnP on the LAN side	
 5.	Enable port forwarding and IP filtering for your router	
 
-a.	#LOCAL ADMINISTRATION
+        #LOCAL ADMINISTRATION
 6.	Check if the router supports HTTPs, in some routers it is disabled by default	
 7.	If HTTPS is supported, can admin access be limited exclusively to HTTPS?	
 8.	Check if the TCP/IP port used for the web interface can be changed	
@@ -46,12 +47,12 @@ a.	#LOCAL ADMINISTRATION
 12.	The router should not allow multiple computers to logon at the same time using the	same userid	
 13.	Check if there is some type of lockout after too many failed attempts to login to the	web interface	
 
-a.	#REMOTE ADMINISTRATION
+        #REMOTE ADMINISTRATION
 14.	Make sure the remote administration settings are turned off by default	
 15.	Check if the port number can be changed remotely	
 16.	If you forget to logout from the router, eventually your session should time out, and, you should be able to set the time limit, the shorter, the more secure	
 
-a.	#ROUTER FIREWALL
+        #ROUTER FIREWALL
 17.	Inbound WAN: What ports are open on the WAN/Internet side? The most secure answer is none and you should expect any router not provided by an ISP to have no open ports on the Internet side. One exception is old school Remote Administration, which requires an open port. Every open port on the WAN side needs to be accounted for, especially if the router was provided by an ISP; they often leave themselves a back door. The Test your Router page links to many websites that offer firewall tests. That said, none of them will scan all 65,535 TCP ports or all 65,535 UDP ports. The best time to test this is before placing a new router into service.	
 18.	Inbound LAN: What ports are open on the LAN side? Expect port 53 to be open for DNS (probably UDP, maybe TCP). If the router has a web interface, then that requires an open port. The classic/standard utility for testing the LAN side firewall is Nmap. As with the WAN side, every port that is open needs to be accounted for.	
 19.	Outbound: Can the router create outgoing firewall rules? There are all sorts of attacks that can be blocked with outgoing firewall rules. Generally, consumer routers do not offer outbound firewall rules while business class routers do. In addition to blocking, it would be nice if the blocks were logged for auditing purposes. Note however, that devices connected to Tor or a VPN will not obey the outbound firewall rules.	
@@ -172,6 +173,3 @@ a.	#ROUTER FIREWALL
 54.	Provide secure storage for Confidential (category-I) Data as required. Security can be provided by means such as, but not limited to, encryption, access controls, file system audits, physically securing the storage media, or any combination thereof as deemed appropriate.	
 55.	Install software to check the integrity of critical operating system files.	
 56.	If RDP is utilized, set RDP connection encryption level to high.	
-
-
-
